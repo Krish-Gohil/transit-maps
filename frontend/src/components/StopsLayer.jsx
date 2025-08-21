@@ -1,11 +1,17 @@
 import useLocationStore from "../stores/locationStore.js";
 import {useEffect, useState} from "react";
-import {CircleMarker, Marker, Popup} from "react-leaflet";
+import {CircleMarker, Popup} from "react-leaflet";
+import useSelectedStopsStore from "../stores/selectedStopsStore.js"
+
 
 export default function StopsLayer({lng, lat, radius = 1000}) {
     const [stops, setStops] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const {
+        addSelectedStop,
+    } = useSelectedStopsStore();
 
     useEffect(() => {
         const params = new URLSearchParams({lng, lat, radius})
@@ -16,7 +22,7 @@ export default function StopsLayer({lng, lat, radius = 1000}) {
                 return res.json()
             })
             .then(data => {
-                // console.log(data)
+                console.log(data)
                 setStops(data);
                 setLoading(false);
             })
@@ -41,7 +47,10 @@ export default function StopsLayer({lng, lat, radius = 1000}) {
                     weight={1}
                     fillOpacity={0.8} >
 
-                    <Popup>{stop.stop_name}</Popup>
+                    <Popup><p className='text-blue-500 underline cursor-pointer' onClick={() => {
+                        addSelectedStop(stop)
+                        console.log(`ClickedStop: ${stop}`)
+                    }}>{stop.stop_name}</p></Popup>
 
                 </CircleMarker>
             ))}

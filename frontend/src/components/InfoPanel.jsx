@@ -2,6 +2,7 @@ import React from 'react';
 import TextBox from "./TextBox.jsx";
 import useLocationStore from "../stores/locationStore.js";
 import {useEffect} from "react";
+import EtaDetailsBox from "./EtaDetailsBox.jsx";
 
 const InfoPanel = () => {
 
@@ -51,10 +52,7 @@ const InfoPanel = () => {
                 onChange={(e) => setDestination(e.target.value)}
             />
 
-            <hr className='my-4 border-black' />
-            <span className="text-lg font-bold mb-2 mb-10">Stop Time   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <span className='text-red-500'>ETA</span></span>
-
-
+        <EtaDetailsBox></EtaDetailsBox>
         </div>
 
     )
