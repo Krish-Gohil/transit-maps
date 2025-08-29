@@ -31,6 +31,8 @@ const useLocationStore = create(set => ({
             })
     },
     setManualLocation: (value) => {set({manualLocation: value})},
+    destinationLocation: null,
+    setDestinationLocation: (destinationLocation) => set({ destinationLocation })
 }))
 
 export default useLocationStore;

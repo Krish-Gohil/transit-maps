@@ -28,8 +28,8 @@ export default function MapPanel() {
                 preferCanvas={true}
             >
                 <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                    url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+                    attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
                 />
                 <ZoomControl position="bottomright" />
 
@@ -40,7 +40,9 @@ export default function MapPanel() {
                     </Marker>
                 )}
 
-                <StopsLayer lng={location.lng} lat={location.lat} radius={2000} />
+                {location && !denied && (
+                    <StopsLayer lng={location.lng} lat={location.lat} radius={2000} />
+                )}
 
             </MapContainer>
         </div>

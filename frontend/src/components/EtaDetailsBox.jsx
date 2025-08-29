@@ -41,51 +41,50 @@ export default function EtaDetailsBox() {
 
     return (
         <>
-            <h2 className="text-lg font-bold mt-4 mb-2">Upcoming Buses</h2>
+            <h2 className="text-lg font-bold mt-4 mb-2 text-white">Upcoming Buses</h2>
 
             {selectedStops.length === 0 ? (
-                <div className="p-4 text-center text-gray-500 border rounded-lg bg-gray-50">
+                <div className="p-4 text-center text-gray-300 border border-gray-600 rounded-lg bg-gray-700">
                     <p className="text-sm">No stops selected yet</p>
-                    <p className="text-xs">Choose a stop on the map to see real-time arrivals</p>
+                    <p className="text-xs text-gray-300">Choose a stop on the map to see real-time arrivals</p>
                 </div>
             ) : (
                 <>
                     {selectedStops.map(stop => (
                         // main div
-                        <div key={stop.stop_id} className='border-2 shadow mb-2 p-2'>
-                        <div className='flex items-center justify-between mb-2'>
-                                <span className='font-semibold'>{stop.stop_name}</span>
-                                <button className='text-red-500 hover:text-red-700'
+                        <div key={stop.stop_id} className='border-2 border-gray-600 shadow-lg mb-2 p-3 bg-gray-800 rounded-lg'>
+                            <div className='flex items-center justify-between mb-2'>
+                                <span className='font-semibold text-white'>{stop.stop_name}</span>
+                                <button className='text-red-400 hover:text-red-300 transition-colors'
                                     onClick={() => removeSelectedStop(stop)}>✕
                                 </button>
                             </div>
 
-                            {/*    bus eta info*/}
-                            <div className='text-sm text-gray-700'>
+                            {/*    bus eta info */}
+                            <div className='text-sm text-gray-200'>
                                 {eta[stop.stop_id]?.map(bus => (
                                     <div
                                         key={bus.trip_id}
-                                        className="flex justify-between items-center bg-gray-50 border rounded-lg p-2 mb-2"
+                                        className="flex justify-between items-center bg-gray-700 border border-gray-600 rounded-lg p-3 mb-2 hover:bg-gray-600 transition-colors"
                                     >
                                         <div className="flex flex-col">
-                                            <span
-                                                className="font-semibold text-blue-700">{bus.bus_name.split(" - ")[0]}</span>
-                                            <span className="text-xs text-gray-500  max-w-[200px]">
+                                            <span className="font-semibold text-blue-300">
+                                                {bus.bus_name.split(" - ")[0]}
+                                            </span>
+                                            <span className="text-xs text-gray-300 max-w-[200px] truncate">
                                                 {bus.bus_name.split(" - ")[1]}
                                             </span>
                                         </div>
-                                        <span className="font-bold text-green-600">
+                                        <span className="font-bold text-green-400 text-lg">
                                             {bus.mins_from_now} min
                                         </span>
                                     </div>
                                 ))}
                             </div>
-
-
                         </div>
                     ))}
                     <button
-                        className="mt-2 w-full py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow hover:bg-red-600 transition"
+                        className="mt-3 w-full py-2.5 px-4 bg-red-600 text-white font-semibold rounded-lg shadow-lg hover:bg-red-700 transition-all"
                         onClick={clearSelectedStop}
                     >
                         Clear All Stops

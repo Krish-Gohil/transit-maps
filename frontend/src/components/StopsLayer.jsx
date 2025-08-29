@@ -22,7 +22,7 @@ export default function StopsLayer({lng, lat, radius = 1000}) {
                 return res.json()
             })
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 setStops(data);
                 setLoading(false);
             })
@@ -49,7 +49,6 @@ export default function StopsLayer({lng, lat, radius = 1000}) {
 
                     <Popup><p className='text-blue-500 underline cursor-pointer' onClick={() => {
                         addSelectedStop(stop)
-                        console.log(`ClickedStop: ${stop}`)
                     }}>{stop.stop_name}</p></Popup>
 
                 </CircleMarker>
