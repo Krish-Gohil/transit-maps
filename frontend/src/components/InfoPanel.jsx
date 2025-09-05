@@ -104,7 +104,7 @@ const InfoPanel = () => {
 
     return (
         <div
-            className="fixed sm:absolute top-4 left-1/2 sm:left-6 -translate-x-1/2 sm:translate-x-0 z-50 p-4 rounded-xl shadow-lg w-[calc(100%-2rem)] sm:w-[400px] max-h-[90vh] overflow-auto 
+            className="fixed sm:absolute top-4 left-1/2 sm:left-6 -translate-x-1/2 sm:translate-x-0 z-50 p-4 rounded-xl shadow-lg w-[calc(100%-2rem)] sm:w-[400px] max-h-[90vh] overflow-auto
             backdrop-blur-md bg-gradient-to-br from-gray-800/70 to-gray-900/80 border border-gray-700/50 shadow-2xl"
             style={{ maxWidth: 'calc(100% - 2rem)' }}>
             <h1 className="text-lg font-bold mb-2 text-center sm:text-left text-white">TTC Transit Map</h1>
@@ -145,7 +145,7 @@ const InfoPanel = () => {
                     {suggestions.map(s => (
                     <li className='p-2 cursor-pointer hover:bg-gray-600'
                     onClick={() => {
-                        setDestinationClicked(true)
+                           setDestinationClicked(true)
                         setDestination(s.label)
                         setDestinationCoordinates({lat: s.lat, lon: s.lon})
                         setSuggestions([])

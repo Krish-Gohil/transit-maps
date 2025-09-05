@@ -1,0 +1,71 @@
+Date : 2025-08-25 13:04:35
+Directory : c:\Users\krish\OneDrive\Desktop\ttcMaps\backend
+Total : 29 files,  -3202 codes, -22 comments, -44 blanks, all -3268 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| XML            |          2 |         -2 |          0 |          0 |         -2 |
+| PostCSS        |          2 |         -6 |          0 |          0 |         -6 |
+| Markdown       |          1 |         -7 |          0 |         -6 |        -13 |
+| JavaScript     |         12 |         -8 |         -3 |         17 |          6 |
+| HTML           |          1 |        -13 |          0 |         -1 |        -14 |
+| JavaScript JSX |          7 |       -254 |        -19 |        -54 |       -327 |
+| JSON           |          4 |     -2,912 |          0 |          0 |     -2,912 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                 |         29 |     -3,202 |        -22 |        -44 |     -3,268 |
+| . (Files)                                                                         |          4 |      1,373 |          0 |         10 |      1,383 |
+| ..                                                                                |         21 |     -4,648 |        -22 |        -74 |     -4,744 |
+| ..\frontend                                                                       |         21 |     -4,648 |        -22 |        -74 |     -4,744 |
+| ..\frontend (Files)                                                               |          8 |     -4,330 |         -2 |        -13 |     -4,345 |
+| ..\frontend\public                                                                |          1 |         -1 |          0 |          0 |         -1 |
+| ..\frontend\src                                                                   |         12 |       -317 |        -20 |        -61 |       -398 |
+| ..\frontend\src (Files)                                                           |          4 |        -29 |        -11 |         -8 |        -48 |
+| ..\frontend\src\assets                                                            |          1 |         -1 |          0 |          0 |         -1 |
+| ..\frontend\src\components                                                        |          5 |       -231 |         -8 |        -46 |       -285 |
+| ..\frontend\src\stores                                                            |          2 |        -56 |         -1 |         -7 |        -64 |
+| controllers                                                                       |          2 |         63 |          0 |         14 |         77 |
+| routes                                                                            |          2 |         10 |          0 |          6 |         16 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                          | language       | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\controllers\etaData.js            | JavaScript     |         35 |          0 |          4 |         39 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\controllers\nearbyStops.js        | JavaScript     |         28 |          0 |         10 |         38 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\db.js                             | JavaScript     |         10 |          0 |          3 |         13 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\index.js                          | JavaScript     |         14 |          0 |          5 |         19 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\package-lock.json                 | JSON           |      1,329 |          0 |          1 |      1,330 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\package.json                      | JSON           |         20 |          0 |          1 |         21 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\routes\etaDataController.js       | JavaScript     |          5 |          0 |          3 |          8 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\routes\nearbyStops.js             | JavaScript     |          5 |          0 |          3 |          8 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\README.md                        | Markdown       |         -7 |          0 |         -6 |        -13 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\eslint.config.js                 | JavaScript     |        -28 |          0 |         -2 |        -30 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\index.html                       | HTML           |        -13 |          0 |         -1 |        -14 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\package-lock.json                | JSON           |     -4,227 |          0 |         -1 |     -4,228 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\package.json                     | JSON           |        -34 |          0 |         -1 |        -35 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\postcss.config.js                | JavaScript     |         -6 |          0 |          0 |         -6 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\public\vite.svg                  | XML            |         -1 |          0 |          0 |         -1 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\App.css                      | PostCSS        |         -3 |          0 |          0 |         -3 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\App.jsx                      | JavaScript JSX |        -14 |        -11 |         -6 |        -31 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\assets\react.svg             | XML            |         -1 |          0 |          0 |         -1 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\components\EtaDetailsBox.jsx | JavaScript JSX |        -82 |         -2 |        -13 |        -97 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\components\InfoPanel.jsx     | JavaScript JSX |        -51 |         -4 |        -13 |        -68 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\components\MapPanel.jsx      | JavaScript JSX |        -37 |         -2 |        -10 |        -49 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\components\StopsLayer.jsx    | JavaScript JSX |        -49 |          0 |         -9 |        -58 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\components\TextBox.jsx       | JavaScript JSX |        -12 |          0 |         -1 |        -13 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\index.css                    | PostCSS        |         -3 |          0 |          0 |         -3 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\main.jsx                     | JavaScript JSX |         -9 |          0 |         -2 |        -11 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\stores\locationStore.js      | JavaScript     |        -33 |         -1 |         -2 |        -36 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\src\stores\selectedStopsStore.js | JavaScript     |        -23 |          0 |         -5 |        -28 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\tailwind.config.js               | JavaScript     |        -10 |         -1 |          0 |        -11 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\vite.config.js                   | JavaScript     |         -5 |         -1 |         -2 |         -8 |
+| Total                                                                             |                |     -3,202 |        -22 |        -44 |     -3,268 |
++-----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import nearbyStops from "./routes/nearbyStops.js";
 import etaDataController from "./routes/etaDataController.js";
+import routingStopsList from "./routes/routingStopsList.js";
 
 dotenv.config()
 const app = express()
@@ -10,7 +11,7 @@ app.use(cors())
 
 app.use('/api/stops', nearbyStops)
 app.use('/api/eta', etaDataController)
-
+// app.use('/api/routingStopsList', routingStopsList)
 
 const port = process.env.PORT || 3000
 
