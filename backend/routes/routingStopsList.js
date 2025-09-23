@@ -1,7 +1,7 @@
 import express from 'express';
-import {routingStopsList} from "../controllers/routingStopsList.js";
+import {trips} from "../controllers/trips.js";
 const router = express.Router();
 
-router.get('/', routingStopsList)
+router.get('/', trips)
 
 export default router;

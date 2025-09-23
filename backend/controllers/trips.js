@@ -4,7 +4,7 @@ export const routingStopsList = async (req, res) => {
     const {originLat, originLon, destinationLat, destinationLon} = req.query;
 
     if(!originLon || !destinationLon || !originLat || !destinationLat) {
-        return res.status(400).json({error: "origin or destination co-oridnates not found"})
+        return res.status(400).json({error: "origin or destination co-ordinates not found"})
     }
 
     try{
