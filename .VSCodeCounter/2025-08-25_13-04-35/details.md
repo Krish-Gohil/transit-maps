@@ -17,7 +17,7 @@ Total : 8 files,  1446 codes, 0 comments, 30 blanks, all 1476 lines
 | [backend/index.js](/backend/index.js) | JavaScript | 14 | 0 | 5 | 19 |
 | [backend/package-lock.json](/backend/package-lock.json) | JSON | 1,329 | 0 | 1 | 1,330 |
 | [backend/package.json](/backend/package.json) | JSON | 20 | 0 | 1 | 21 |
-| [backend/routes/etaDataController.js](/backend/routes/etaDataController.js) | JavaScript | 5 | 0 | 3 | 8 |
+| [backend/routes/etaData.js](/backend/routes/etaData.js) | JavaScript | 5 | 0 | 3 | 8 |
 | [backend/routes/nearbyStops.js](/backend/routes/nearbyStops.js) | JavaScript | 5 | 0 | 3 | 8 |
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

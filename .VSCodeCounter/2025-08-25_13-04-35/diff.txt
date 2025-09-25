@@ -44,7 +44,7 @@ Files
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\index.js                          | JavaScript     |         14 |          0 |          5 |         19 |
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\package-lock.json                 | JSON           |      1,329 |          0 |          1 |      1,330 |
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\package.json                      | JSON           |         20 |          0 |          1 |         21 |
-| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\routes\etaDataController.js       | JavaScript     |          5 |          0 |          3 |          8 |
+| c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\routes\etaData.js       | JavaScript     |          5 |          0 |          3 |          8 |
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\backend\routes\nearbyStops.js             | JavaScript     |          5 |          0 |          3 |          8 |
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\README.md                        | Markdown       |         -7 |          0 |         -6 |        -13 |
 | c:\Users\krish\OneDrive\Desktop\ttcMaps\frontend\eslint.config.js                 | JavaScript     |        -28 |          0 |         -2 |        -30 |
