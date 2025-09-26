@@ -39,7 +39,7 @@ const InfoPanel = () => {
         });
 
         try {
-            const url = `${import.meta.env.VITE_BACKEND_API}/trips?${params}`;
+            const url = `${import.meta.env.BACKEND_API}/trips?${params}`;
             const res = await fetch(url);
             if (!res.ok) throw new Error("Error finding direct trips");
             const data = await res.json();
