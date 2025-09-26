@@ -28,7 +28,7 @@ export default function DestinationBox({onDestinationSelect, onSearchClick, stat
                     text: destination,
                     // approximate greater toronto area bounds
                     filter: "rect:-79.6393,43.5810,-79.1153,43.8555",
-                    apiKey: import.meta.env.VITE_GEO_APIFY,
+                    apiKey: import.meta.env.GEO_APIFY_KEY,
                     limit: "5"
                 })
                 const url = `https://api.geoapify.com/v1/geocode/search?${params.toString()}`

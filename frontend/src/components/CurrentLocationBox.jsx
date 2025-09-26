@@ -25,7 +25,7 @@ export default function CurrentLocationBox(props) {
             const params = new URLSearchParams({
                 lat: location.lat,
                 lon: location.lng,
-                apiKey: import.meta.env.VITE_GEO_APIFY
+                apiKey: import.meta.env.GEO_APIFY_KEY
             })
 
             const url = `https://api.geoapify.com/v1/geocode/reverse?${params.toString()}`
