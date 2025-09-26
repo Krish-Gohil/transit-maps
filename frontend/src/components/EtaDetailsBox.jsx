@@ -19,7 +19,7 @@ export default function EtaDetailsBox() {
         const fetchEta = () => {
             selectedStops.forEach(stop => {
                 const params = new URLSearchParams({ stop_id: stop.stop_id });
-                fetch(`${import.meta.env.BACKEND_API}/eta?${params}`)
+                fetch(`${import.meta.env.VITE_BACKEND_API}/eta?${params}`)
                     .then(res => {
                         if (!res.ok) throw new Error("Error fetching eta from stop_id");
                         return res.json();

@@ -16,7 +16,7 @@ export default function StopsLayer({lng, lat, radius = 1000}) {
     useEffect(() => {
         const params = new URLSearchParams({lng, lat, radius})
 
-        fetch(`${import.meta.env.BACKEND_API}/stops?${params.toString()}`)
+        fetch(`${import.meta.env.VITE_BACKEND_API}/stops?${params.toString()}`)
             .then(res => {
                 if (!res.ok) throw new Error("Error fetching nearbyStops")
                 return res.json()
